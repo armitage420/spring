@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login/Register</title>
+<link rel="stylesheet" href="loginRegister.css">
+</head>
+<body>
+<button class="open-button" onclick="openForm()">Register</button>
+
+	<div class="form-popup" id="myForm">
+		<form action="" class="form-container">
+			<h1>Register</h1>
+
+			<label for="name"><b>Name</b></label> <input type="text"
+				placeholder="Enter Your Name" name="name" required><label
+				for="email"><b>Email</b></label> <input type="text"
+				placeholder="Enter Email" name="email" required> <label
+				for="pass"><b>Password</b></label> <input type="password"
+				placeholder="Enter Password" name="pass" required><label
+				for="pass2"><b>Confirm Password</b></label> <input type="password"
+				placeholder="Re-Enter Password" name="pass2" required>
+
+			<button type="submit" class="btn">Register</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<h1>Welcome</h1>
+
+			<form class="form" action="">
+				<input type="text" placeholder="Username"> <input
+					type="password" placeholder="Password">
+				<button type="submit" id="login-button">Login</button>
+			</form>
+		</div>
+
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+	</script>
+</body>
+</html>
